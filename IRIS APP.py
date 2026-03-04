@@ -50,10 +50,11 @@ if submit_button:
         "petal_width (cm)" : [petal_width],
         "sepal_width (cm)" : [sepal_width]
     })
-    prediction = model.predict(input_data)
+    prediction = model.predict(input_data.value)
 
     st.subheader("Prediction Result")
 
     st.success(f"Predicted Species: {prediction[0]}")
+
 
 
